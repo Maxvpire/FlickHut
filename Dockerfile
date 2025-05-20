@@ -3,6 +3,7 @@ WORKDIR /app
 COPY . .
 RUN mvn clean package
 RUN mkdir -p /app/target
+RUN mkdir -p /app/target/myapp.jar
 
 
 FROM openjdk:17-jdk
